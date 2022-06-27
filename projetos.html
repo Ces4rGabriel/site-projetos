@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/projetos.css">
+        <link rel="stylesheet" href="assets/style/projetos.css">
         <title>Website Projects</title>
     </head>
     <body>
-        <header>
+        <header id="cabecalho">
             <div class="logo">
                 <img src="#" style="height: 50px; width:50px" align="left">
             </div>
-            <div class="table-of-contacts" align = "right">
-                <a href="#">Instagram</a> |
-                <a href="#">E-mail</a> |
-                <a href="#">WhatsApp</a>
+
+            <div id ="contatos">
+                <div class="logo-contatos" id="logo1">
+                    <img src="assets/image/instagram-logo.png" alt="Logo do Instagram" class="logo-img">
+                    <a href="#" class="link-logo">Instagram</a>
+                </div> 
+                <div class="logo-contatos" id="logo2">
+                    <img src="assets/image/whatsapp-logo.png" alt="Logo do WhatsApp" class="logo-img">
+                    <a href="#" class="link-logo">WhatsApp</a>
+                </div>
             </div>
         </header>
 
@@ -45,16 +51,20 @@
         </main>
         <footer>
             <hr>
-            <h2>Fale Conosco</h2>
-            <label for="name">Nome</label>
-            <br>
-            <input type="text" name="name" id="name_client" placeholder=" Digite seu nome">
-            <br><br>
-            <label for="email">Email</label>
-            <br>
-            <input type="email" name="email" id="email_client" placeholder=" Digite seu email">
-            <br><br>
-            <input type="submit" value="Enviar">   
+            <div id = "fale-conosco">
+                <h2>Fale Conosco</h2>
+                <label for="name">Nome</label>
+                <br>
+                <input type="text" name="name" id="name_client" placeholder=" Digite seu nome">
+                <br><br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email_client" placeholder=" Digite seu email">
+                <br><br>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem_clent" cols="40" rows="60" placeholder="Digite sua mensagem aqui"></textarea>
+                <input type="submit" value="Enviar">
+            </div>
             <hr>
             <p align = "center">Todos os direitos reservados &copy;</p>
         </footer>
