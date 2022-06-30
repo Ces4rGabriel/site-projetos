@@ -1,61 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Website Projects</title>
+        <link rel="stylesheet" href="assets/style/projetos.css">
+        <script src="https://kit.fontawesome.com/f93398103c.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="assets/image/favicon/logo_transparent.ico" type="image/x-icon">
+        <title>CompSite</title>
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="#" style="height: 50px; width:50px" align="left">
-            </div>
-            <div class="table-of-contacts" align = "right">
-                <a href="#">Instagram</a> |
-                <a href="#">E-mail</a> |
-                <a href="#">WhatsApp</a>
+                <div id="logo-elementos">
+                            <i class="fa-solid fa-laptop-code logo logoSite"></i>
+                            <span class="textoLogo" title="Texto do Logo">CompSite</span>
+                </div>
+
+                <div id="pesquisa">
+                    <input type="search" name="pesquisa" id="search" placeholder="Encontre items no site ">
+                    <button class="bnt-pesquisar"><svg  data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1002.67 1002.67"><path  class="bnt-lupa" data-name="Caminho 321" d="M718.08,636.59H675.3L660.14,622c127-147.91,110-370.74-37.9-497.71s-370.74-110-497.71,37.91-110,370.73,37.91,497.7c132.24,113.53,327.55,113.53,459.8,0L636.86,675v42.78L867,948a57.07,57.07,0,0,0,80.68-80.68Zm-324.9,0c-134.57,0-243.67-109.1-243.67-243.68s109.1-243.67,243.67-243.67S636.86,258.33,636.86,392.91c.18,134.4-108.63,243.5-243,243.68Z"></path></svg></button>
+                </div>
+
+            <div id ="contatos">
+                <div class="logo-contatos" id="logo1">
+                    <a href="#"><img src="assets/image/instagram-logo.png" alt="Logo do Instagram" class="logo-img"></a>
+                </div> 
+                <div class="logo-contatos" id="logo2">
+                    <a href="#"><img src="assets/image/whatsapp-logo.png" alt="Logo do WhatsApp" class="logo-img"></a>
+                </div>
             </div>
         </header>
 
         <main>
-            <div class="introduction">
-                <br><br>
-                <hr>
+            <br><br>
+            <hr>
+            <span></span>
+
+            <div id="conteudo-principal">
                 <h1>Quem somos?</h1>
-                <p align = "justify" >Somos a equipe que contém os melhores Trainee que ja passaram pela Voluta, estamos fazendo a melhor landing page possível para fazer a tarefa de projetos e tenho certeza que será muito legal</p>
-            </div>
+                
+                <p style="margin-left:10px; width: 800px;">Somos uma empresa que fabrica sites, e softwares. Nós somos uma empresa composta por alguns Trainees da melhor diretoria de projetos, da Empresa Junior <a href="http://voluta.ufop.br/" target="_blank">Voluta</a> , da <strong><a href="https://ufop.br/" target="_blank" >UFOP</a></strong> e esse site é um dos projetos que foi designado para que fizéssemos, para aprender e aprimorar nossas habilidades com Front End.</p>
+            
+            <br>
+            <h1>Nossos Serviços</h1>
+            <br>
             <div class="services">
-                <h1>Nossos Serviços</h1>
+                <br>
                 <div class="table-of-services">
-                    <ul>
-                        <li  style="width:800px;">
-                            <p align = "justify">Efetuamos vários projetos de sites, manutenção em sites.Projeto de sites é o planejamento necessário para a elaboração de um web site qualquer.</p>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>
+                            <p class="servicos-p">Efetuamos vários projetos de sites, manutenção em sites. Projeto de sites é o planejamento necessário para a elaboração de um web site qualquer.</p>
                         </li>
-                        <li style="width:800px;">
-                            <p  align = "justify">Criamos sites interessantes e de alta qualidade de forma colaborativa para uma equipe, um projeto ou um evento.Os sites têm uma aparência ótima em todas as telas, de computadores a smartphones.</p>
+                        <br>
+                        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>
+                            <p class="servicos-p">Criamos sites interessantes e de alta qualidade de forma colaborativa para uma equipe, um projeto ou um evento.Os sites têm uma aparência ótima em todas as telas, de computadores a smartphones.</p>
                         </li>
-                        <li style="width:800px;">
-                            <p align = "justify" >A manutenção do site é o ato de verificar regularmente se há problemas e erros em seu site e mantê-lo atualizado e relevante.Isso deve ser feito de forma consistente para manter seu site saudável, estimular o crescimento contínuo do tráfego. Manter um site bem mantido e atraente é importante para empresas grandes e pequenas, a fim de atrair e reter clientes. O monitoramento regular do seu site é essencial para manter o bom funcionamento do seu negócio.</p>
+                        <br>
+                        <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>
+                            <p  class="servicos-p">A manutenção do site é o ato de verificar regularmente se há problemas e erros em seu site e mantê-lo atualizado e relevante.Isso deve ser feito de forma consistente para manter seu site saudável, estimular o crescimento contínuo do tráfego. Manter um site bem mantido e atraente é importante para empresas grandes e pequenas, a fim de atrair e reter clientes. O monitoramento regular do seu site é essencial para manter o bom funcionamento do seu negócio.</p>
                         </li>
                     </ul>
                 </div>
+                <div class="img-servicos">
+                    <img src="assets/image/img-site/undraw_Static_website_re_x70h.png" alt="Segurando Celular">
+                </div>
             </div>
+        </div>
+        <hr>
+        <div>
+            <h1>Acesse nosso portifólio</h1>
+
+            <h2 style="font-size: 19px;">Site que fizemos para empresa XXXXXXXX</h2>
+            <div class="site-projetos">
+                <img src="assets/image/img-site/72_crop_520x520x100-removebg-preview.png" alt="imagem site" class="img-portifolio" >
+                <p> Esse site foi produzido pela nossa equipe, após o cliente passa todas as especificações. Esse projeto foi desenvolvido em conjunto para que todos pudessem ter uma participação. E fizemos ele um site responsivo (que se adapta a diversos dispositivos) além disso, ele tem imagens responsivas entreoutras funcionalidades.</p>
+            </div>
+            <p class="acessar-portifolio">Para ver mais proejtos desenvolvidos pela nossa equipe, basta clicar <strong><a href="#">AQUI</a></strong>, ou acessar o link <strong><a href="http://www.compsite/portifolio.com" >www.compsite/portifolio.com</a></strong></p>
+        </div>
         </main>
+        <hr>
+        <div class="top"> <a href="#" class="voltar"><i class="fa-solid fa-arrow-up"></i></a></div>
         <footer>
+            <div id = "fale-conosco">
+                <h2>Fale Conosco</h2>
+                <div id="entrada_user">
+                    <label for="name">Nome</label>
+                    <br>
+                    <input type="text" name="name" id="nome_cliente" placeholder=" Digite seu nome">
+                    <br><br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email_cliente" placeholder=" Digite seu email">
+                    <br><br>
+                    <label for="mensagem">Mensagem</label>
+                    <br>
+                    <textarea name="mensagem" id="mensagem_clente" cols="47" rows="3" placeholder="Digite sua mensagem aqui"></textarea>
+                    <br><br>
+                    <button type="submit" class="enviar">Enviar</button>
+                </div>
+            </div>
             <hr>
-            <h2>Fale Conosco</h2>
-            <label for="name">Nome</label>
-            <br>
-            <input type="text" name="name" id="name_client" placeholder=" Digite seu nome">
-            <br><br>
-            <label for="email">Email</label>
-            <br>
-            <input type="email" name="email" id="email_client" placeholder=" Digite seu email">
-            <br><br>
-            <input type="submit" value="Enviar">   
-            <hr>
-            <p align = "center">Todos os direitos reservados &copy;</p>
+            <p >CompSite - Todos os direitos reservados &copy;</p>
         </footer>
     </body>
 </html>
