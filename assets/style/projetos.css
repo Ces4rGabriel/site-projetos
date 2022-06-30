@@ -146,11 +146,11 @@ main {
 
 #search {
     position: relative;
-    width: 290px;
+    width: 340px;
     height: 35px;
     border: 2px solid var(--cor1);
     display: inline;
-    left: 700px;
+    left: 650px;
     border-radius: 10px;
 }
 
@@ -188,6 +188,10 @@ input, textarea {
     border: 1px solid black;
     background-color: var(--cor3);
     font-family: var(--font);
+}
+
+input:focus{
+    outline: none;
 }
 
 /*site porjetos*/
@@ -281,4 +285,9 @@ a {
 
 footer > p {
     text-align: center;
+}
+
+
+.img-portifolio:hover {
+    cursor:zoom-in;
 }
