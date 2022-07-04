@@ -9,7 +9,7 @@
         <link rel="shortcut icon" href="assets/image/favicon/logo_transparent.ico" type="image/x-icon">
         <title>CompSite</title>
     </head>
-    <body>
+    <body onscroll="scrollBar()">
         <header>
                 <div id="logo-elementos">
                             <i class="fa-solid fa-laptop-code logo logoSite"></i>
@@ -65,6 +65,10 @@
                     <img src="assets/image/img-site/undraw_Static_website_re_x70h.png" alt="Segurando Celular">
                 </div>
             </div>
+            <div class="direitos">
+                Ao aceitar você concorda com nosso  <span style="text-decoration:underline; margin-left:10px;"> termos de Serviços</span>
+                <button type="submit" class="aceitar" onclick="invisible()">Aceitar</button>
+            </div>
         </div>
         <hr>
         <div>
@@ -102,5 +106,6 @@
             <hr>
             <p >CompSite - Todos os direitos reservados &copy;</p>
         </footer>
+        <script src="assets/script/script.js"></script>
     </body>
 </html>

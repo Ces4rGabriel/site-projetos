@@ -117,6 +117,7 @@ main {
     bottom: 10px;
     left: 1290px;
     display: flex;
+    z-index: 1;
 }
 
 
@@ -291,3 +292,50 @@ footer > p {
 .img-portifolio:hover {
     cursor:zoom-in;
 }
+
+.direitos {
+    display: flex;
+    bottom:10px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color:var(--cor1);
+    border: 2px solid black; 
+    width: 95vw;
+    height: 35px;
+    border-radius: 3px;
+    z-index: 100000;
+}
+
+.aceitar {
+    background-color: #1d3152;
+    width: 80px;
+    height: 25px;
+    margin-left: 50px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+.aceitar:hover {
+    cursor: pointer;
+}
+
+.bg-inverse {
+    background-color: var(--cor5) !important;
+}
+
+.color-inverse {
+    color: white !important;
+}
+
+.color-title {
+    color: white;
+    text-shadow:3px 2px 4px rgba(255, 255, 255, 0.281); 
+}
+
+.invisible {
+    display: none;
+}
+
