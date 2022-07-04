@@ -9,13 +9,12 @@
         <link rel="shortcut icon" href="assets/image/favicon/logo_transparent.ico" type="image/x-icon">
         <title>CompSite</title>
     </head>
-    <body onscroll="scrollBar()">
+    <body onscroll="scrollBar()" onload="callRelogio()">
         <header>
                 <div id="logo-elementos">
                             <i class="fa-solid fa-laptop-code logo logoSite"></i>
                             <span class="textoLogo" title="Texto do Logo">CompSite</span>
                 </div>
-
                 <div id="pesquisa">
                     <input type="search" name="pesquisa" id="search" placeholder="Encontre items no site ">
                     <button class="bnt-pesquisar"><svg  data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1002.67 1002.67"><path  class="bnt-lupa" data-name="Caminho 321" d="M718.08,636.59H675.3L660.14,622c127-147.91,110-370.74-37.9-497.71s-370.74-110-497.71,37.91-110,370.73,37.91,497.7c132.24,113.53,327.55,113.53,459.8,0L636.86,675v42.78L867,948a57.07,57.07,0,0,0,80.68-80.68Zm-324.9,0c-134.57,0-243.67-109.1-243.67-243.68s109.1-243.67,243.67-243.67S636.86,258.33,636.86,392.91c.18,134.4-108.63,243.5-243,243.68Z"></path></svg></button>
@@ -65,8 +64,20 @@
                     <img src="assets/image/img-site/undraw_Static_website_re_x70h.png" alt="Segurando Celular">
                 </div>
             </div>
+            <div class="relogio">
+                <div class="fechar" onclick="fechar()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <button class="img-relogio" onclick="exibeRelogio()">
+                    <img src="assets/image/img-site/relogio.png" alt="icone-relogio" class="icone-relogio">
+                </button>
+                <div class="time">
+
+                </div>
+            </div>
+            
             <div class="direitos">
-                Ao aceitar você concorda com nosso  <span style="text-decoration:underline; margin-left:10px;"> termos de Serviços</span>
+                Ao aceitar você concorda com nosso termos de Serviços
                 <button type="submit" class="aceitar" onclick="invisible()">Aceitar</button>
             </div>
         </div>

@@ -1,8 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap');
 
+@font-face {
+    font-family: 'digital';
+    src: url(font/ds_digital/DS-DIGIB.TTF);
+}
+
 :root {
     --font: 'Poppins', sans-serif;
+    --font2: 'digital';
     --cor1: #86A6DF;
     --cor2: #324E7B;
     --cor5: #1d3152;
@@ -303,7 +309,7 @@ footer > p {
     background-color:var(--cor1);
     border: 2px solid black; 
     width: 95vw;
-    height: 35px;
+    height: 45px;
     border-radius: 3px;
     z-index: 100000;
 }
@@ -312,7 +318,7 @@ footer > p {
     background-color: #1d3152;
     width: 80px;
     height: 25px;
-    margin-left: 50px;
+    margin-left: 10px;
     border-radius: 4px;
     color: white;
     border: none;
@@ -339,3 +345,56 @@ footer > p {
     display: none;
 }
 
+/*mudando relogio*/
+.relogio {
+    display: flex;
+
+}
+
+.icone-relogio {
+    width: 40px;
+    height: 40px;
+    background-color: var(--cor5);
+    border-radius: 100%;
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+}   
+
+.icone-relogio:hover {
+    cursor: pointer;
+}
+
+.time {
+    font-family: var(--font2);
+    font-size: 30px;
+    background-color: #1d3152;
+    position: relative;
+    color: white;
+    display: inline;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    position: fixed;
+    bottom: 110px;
+    right: 60px;
+}
+
+.fechar {
+    display: flex;
+    background-color: red;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 145px;
+    right: 177px;
+    z-index: 9999;
+}
+
+.fechar:hover {
+    cursor: pointer;
+}

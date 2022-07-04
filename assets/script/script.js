@@ -1,18 +1,3 @@
-
-function verificarCheckBox() {
-    let bntCheck = document.getElementsByName("bntCheck"); 
-
-    for (let i=0;i<bntCheck.length;i++){ 
-        if (bntCheck[i].checked == true){ 
-            // CheckBox Marcado... Faça alguma coisa...
-            console.log('is checked')
-        }  else {
-           // CheckBox Não Marcado... Faça alguma outra coisa...
-           console.log('is not checked')
-        }
-    }
-}
-
 const direito = document.querySelector('.direitos')
 
 function invisible(){
@@ -34,4 +19,42 @@ function scrollBar(){
     else{
         buttonTop.setAttribute('class', 'top')
     }
+}
+
+function callRelogio( ) {
+    setInterval(relogio, 500)
+}
+
+const divTempo = document.querySelector('.time')
+
+function relogio() {
+    const data = new Date()
+
+    let hour = data.getHours()
+    let minute = data.getMinutes()
+    let seconds = data.getSeconds()
+
+    let tempo = hour + ":" + minute + ":" + seconds
+
+    divTempo.innerHTML = tempo
+
+}
+
+const buttonClose = document.querySelector('.fechar')
+
+divTempo.setAttribute('class', 'invisible')
+buttonClose.setAttribute('class', 'invisible')
+
+function exibeRelogio(){
+    divTempo.toggleAttribute('class')
+    divTempo.setAttribute('class', 'time')
+    buttonClose.toggleAttribute('class')
+    buttonClose.setAttribute('class', 'fechar')
+}
+
+function fechar() {
+    divTempo.toggleAttribute('class')
+    divTempo.setAttribute('class', 'invisible')
+    buttonClose.toggleAttribute('class')
+    buttonClose.setAttribute('class', 'invisible')
 }
